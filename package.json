@@ -1,0 +1,38 @@
+{
+  "name": "tapce_server",
+  "version": "1.0.0",
+  "description": "API REST to manage the scores of players for TAPCE Mobile game",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "start:dev": "nodemon --env-file=.env index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aorrihtos/tapce_server.git"
+  },
+  "keywords": [
+    "tapce",
+    "pinball",
+    "mobile",
+    "game",
+    "android",
+    "ios"
+  ],
+  "author": "Pignation Studios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aorrihtos/tapce_server/issues"
+  },
+  "homepage": "https://github.com/Aorrihtos/tapce_server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
