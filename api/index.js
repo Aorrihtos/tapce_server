@@ -13,6 +13,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+// Default route
+app.get("/", (_, res) => res.send("Welcome to TAPCE server!"));
+
 // Routes
 app.use("/api", rankRoutes);
 
