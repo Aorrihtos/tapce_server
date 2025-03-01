@@ -1,6 +1,10 @@
 import { Router } from "express";
+import { getRankOrdered, postScore } from "../controller/rankController.js";
+import { auth } from "../middlewares/auth.js";
+
 const router = Router();
 
-router.get("/test", (req, res) => res.send("test call success"));
+router.get("/rank", [auth], getRankOrdered);
+router.post("/rank", [auth], postScore);
 
 export default router;
